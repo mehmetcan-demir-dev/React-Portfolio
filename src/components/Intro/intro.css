@@ -1,0 +1,86 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 95rem;
+  padding-top: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.text-zone{
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  max-height: 90%;
+  font-size: 1.75rem;
+  font-weight: 300;
+
+}
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+  width: auto;
+  height: 800px;
+}
+
+.introContent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+.introName {
+  color: yellow;
+  font-family: "ADLaM Display", sans-serif;
+}
+.introPara {
+  font-size: 1.50rem;
+  margin-bottom: 30px;
+}
+.btn{
+  background: white;
+  position: absolute;
+  font-size: large;
+  margin: 1rem 0.50rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 2rem;
+}
+.btnCvImg {
+  height: 1rem; 
+}
+@media screen and (max-width:840px) {
+   #intro{
+    margin-top: auto;
+   }
+  .bg{
+      right: -10vw;
+      float: right;
+    }
+    .introContent{
+      font-size: 5vw;
+    }
+    .hello{
+      font-size: 2.5vw;
+    }
+}
+@media screen and (max-width:640px) {
+ #intro{
+  max-width: 100%;
+ }
+}
